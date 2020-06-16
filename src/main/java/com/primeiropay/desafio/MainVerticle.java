@@ -10,7 +10,7 @@ public class MainVerticle extends AbstractVerticle {
     vertx.createHttpServer().requestHandler(req -> {
       req.response()
         .putHeader("content-type", "text/plain")
-        .end("Hello from Vert.x, oh yeshi");
+        .end("Hello from Vert.x");
     }).listen(8888, http -> {
       if (http.succeeded()) {
         startPromise.complete();
