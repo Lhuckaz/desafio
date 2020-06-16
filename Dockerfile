@@ -5,7 +5,7 @@ RUN mvn clean package
 # Extend vert.x image
 FROM vertx/vertx3
 
-ENV VERTICLE_NAME com.primeiropay.desafio
+ENV VERTICLE_NAME com.primeiropay.desafio.MainVerticle
 ENV VERTICLE_FILE target/desafio-1.0.0-SNAPSHOT.jar
 
 # Set the location of the verticles
